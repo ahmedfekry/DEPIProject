@@ -6,6 +6,13 @@ E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.WebApp.runtimeconfig.json
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.WebApp.dll
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.WebApp.pdb
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.Entities.dll
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.Infrastructure.dll
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.Services.dll
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.Services.pdb
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.Entities.pdb
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\OnlineStore.Infrastructure.pdb
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.csproj.AssemblyReference.cache
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.GeneratedMSBuildEditorConfig.editorconfig
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.AssemblyInfoInputs.cache
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.AssemblyInfo.cs
@@ -13,6 +20,7 @@ E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.MvcApplicationPartsAssemblyInfo.cache
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.RazorAssemblyInfo.cache
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.RazorAssemblyInfo.cs
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.sourcelink.json
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\staticwebassets.build.json
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\staticwebassets.development.json
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\staticwebassets\msbuild.OnlineStore.WebApp.Microsoft.AspNetCore.StaticWebAssets.props
@@ -23,6 +31,7 @@ E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\scopedcss\bundle\OnlineStore.WebApp.styles.css
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\scopedcss\projectbundle\OnlineStore.WebApp.bundle.scp.css
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineSt.7CC85BAC.Up2Date
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.dll
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\refint\OnlineStore.WebApp.dll
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\obj\Debug\net8.0\OnlineStore.WebApp.pdb
