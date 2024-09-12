@@ -12,9 +12,7 @@ namespace OnlineStore.Services.Products
     {
         public List<Product> GetOldProducts()
         {
-            GetProductsFromDB productsFromDB = new GetProductsFromDB(); 
-
-            return productsFromDB.GetProducts().ToList().Where(p => p.Id <= 2).ToList();
+            throw new NotImplementedException();
         }
     }
 }
