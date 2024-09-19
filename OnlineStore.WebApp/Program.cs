@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using OnlineStore.Entities.Interfaces.IRepositries;
+using OnlineStore.Entities.Interfaces.IServices;
 using OnlineStore.Infrastructure;
+using OnlineStore.Infrastructure.Repositories;
+using OnlineStore.Services;
 
 //using OnlineStore.Infrastructure.DataContext;
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +15,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IItemRepository, ItemRepository>();
+
+
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IItemService, ItemService>();    
 
 
 var app = builder.Build();

@@ -20,7 +20,7 @@ namespace OnlineStore.Entities.Models.Authentication
         public string State { get; set; }
         public string PostalCode { get; set; }
         public int CountryID { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         // Navigation properties
         public Country Country { get; set; }

@@ -14,6 +14,16 @@ namespace OnlineStore.Infrastructure.DatabaseConfigurations
     {
         public static void ConfigureRelationships(this ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+                .Property(u => u.CreatedAt)
+                .HasDefaultValueSql("GETDATE()");
+
+
+            modelBuilder.Entity<Item>()
+                .Property(u => u.CreatedAt)
+                .HasDefaultValueSql("GETDATE()");
+
+
             // User-Country (One-to-Many)
             modelBuilder.Entity<User>()
                 .HasOne(u => u.Country)

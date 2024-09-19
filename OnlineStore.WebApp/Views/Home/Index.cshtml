@@ -1,8 +1,51 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    // var products = ViewData["Items"] as List<Item>;
+    var products = ViewBag.items;
+    var categories = ViewBag.categories;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Featured Products Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Auctions</h2>
+        <div class="row">
+            @foreach (var item in products)
+            {
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Title</h5>
+                            <p class="card-text">Starting Price: $@item.StartingPrice</p>
+                            <p class="text-danger">Ends in: 3 days 2 hours</p>
+                            <a href="Auction.html" class="btn btn-primary">View Auction</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+<!-- Categories Section -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Browse Categories</h2>
+        <div class="row">
+            @foreach (var category in categories)
+            {
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Category 1">
+                        <div class="card-body">
+                            <h5 class="card-title">@category.CategoryName</h5>
+                            <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
