@@ -2,8 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using OnlineStore.Infrastructure;
 
 //using OnlineStore.Infrastructure.DataContext;
-using OnlineStore.Services.Products;
-
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -14,7 +12,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<ProductService>();
 
 var app = builder.Build();
 

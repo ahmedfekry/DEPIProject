@@ -16,7 +16,7 @@ namespace OnlineStore.Entities.Models.GeneralLookups
         public string Description { get; set; }
 
         // Navigation property
-        public ICollection<Item> Items { get; set; }
+        public ICollection<Item>? Items { get; set; }
     }
 
 }

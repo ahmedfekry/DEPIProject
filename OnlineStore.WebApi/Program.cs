@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using OnlineStore.Entities.Interfaces.IRepositries;
+using OnlineStore.Entities.Interfaces.IServices;
 using OnlineStore.Infrastructure;
-using OnlineStore.Services.Products;
+using OnlineStore.Infrastructure.Repositories;
+using OnlineStore.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +18,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+
 
 var app = builder.Build();
 
