@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using OnlineStore.Entities;
 using OnlineStore.Services.Products;
 
 namespace OnlineStore.WebApi.Controllers
@@ -17,10 +16,5 @@ namespace OnlineStore.WebApi.Controllers
 
         public ProductService ProductService { get; }
 
-        [HttpGet]
-        public List<Product> Get()
-        {
-            return ProductService.GetOldProducts();
-        }
     }
 }

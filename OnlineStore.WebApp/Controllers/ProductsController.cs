@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnlineStore.Entities;
 using OnlineStore.Services.Products;
 
 namespace OnlineStore.WebApp.Controllers
@@ -13,11 +12,5 @@ namespace OnlineStore.WebApp.Controllers
 
         public ProductService ProductService { get; }
 
-        public IActionResult Index()
-        {
-            List<Product> prods = ProductService.GetOldProducts();
-
-            return View();
-        }
     }
 }

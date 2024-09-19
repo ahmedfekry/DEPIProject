@@ -1,5 +1,4 @@
-﻿using OnlineStore.Entities;
-using OnlineStore.Infrastructure;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +9,6 @@ namespace OnlineStore.Services.Products
 {
     public class ProductService
     {
-        public List<Product> GetOldProducts()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
