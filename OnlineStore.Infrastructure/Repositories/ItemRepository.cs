@@ -19,12 +19,12 @@ namespace OnlineStore.Infrastructure.Repositories
         }
 
 
-        public async Task<IEnumerable<Item>> GetAllItems()
+        public async Task<IEnumerable<Item>> GetAllItemsAsync()
         {
             return await _applicationDbContext.Items.ToListAsync();
         }
 
-        public async Task<IEnumerable<Item>> GetFeaturedItems()
+        public async Task<IEnumerable<Item>> GetFeaturedItemsAsync()
         {
             return await _applicationDbContext.Items
                                               .Where(i => i.IsFeatured == true)
@@ -32,11 +32,20 @@ namespace OnlineStore.Infrastructure.Repositories
                                               .ToListAsync();
         }
 
-        public async Task<IEnumerable<Item>> GetItemsByCategory(int categoryId)
+        public async Task<IEnumerable<Item>> GetItemsByCategoryAsync(int categoryId)
         {
             return await _applicationDbContext.Items
                                               .Where(i => i.CategoryID == categoryId)
                                               .ToListAsync();
+        }
+
+        public async Task<Item> GetItemDetailsAsync(int itemId)
+        {
+            return await _applicationDbContext.Items
+                                              .Include(i => i.Seller)
+                                              .Include(i => i.Category)
+                                              .Include(i => i.Bids)
+                                              .Where(i => i.ID == itemId).FirstOrDefaultAsync();
         }
     }
 }

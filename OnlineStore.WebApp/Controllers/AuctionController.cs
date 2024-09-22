@@ -27,7 +27,6 @@ namespace OnlineStore.WebApp.Controllers
             }
             else
             {
-                //items = (await ItemService.GetItemsByCategoryAysnc(categoryid.Value)).ToList();
                 var category =  await CategoryService.GetCategoryDetailsAsync(categoryid.Value);
                 items = category.Items.ToList() ;
                 ViewBag.Category = category; 
@@ -36,6 +35,17 @@ namespace OnlineStore.WebApp.Controllers
 
 
             return View(items);
+        }
+    
+        public async Task<IActionResult> Details(int id)
+        {
+            var item = await ItemService.GetItemDetails(id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return View(item);
         }
     }
 }

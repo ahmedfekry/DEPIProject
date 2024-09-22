@@ -20,17 +20,22 @@ namespace OnlineStore.Services
 
         public async Task<IEnumerable<Item>> GetAllItemsAysnc()
         {
-            return await itemRepository.GetAllItems();
+            return await itemRepository.GetAllItemsAsync();
         }
 
         public async Task<IEnumerable<Item>> GetFeaturedItemsAysnc()
         {
-            return await itemRepository.GetFeaturedItems();
+            return await itemRepository.GetFeaturedItemsAsync();
+        }
+
+        public async Task<Item> GetItemDetails(int itemId)
+        {
+            return await itemRepository.GetItemDetailsAsync(itemId);
         }
 
         public async Task<IEnumerable<Item>> GetItemsByCategoryAysnc(int categoryid)
         {
-            return await itemRepository.GetItemsByCategory(categoryid);
+            return await itemRepository.GetItemsByCategoryAsync(categoryid);
         }
     }
 }

@@ -13,7 +13,7 @@
             <h5 class="card-title">@Model.Title</h5>
             <p class="card-text">Starting Price: $@Model.StartingPrice</p>
             <p class="text-danger">Ends in: 3 days 2 hours</p>
-            <a href="#" class="btn btn-primary">View Auction</a>
+            <a href="@Url.Action("Details","Auction",new { id = Model.ID})" class="btn btn-primary">View Auction</a>
         </div>
     </div>
 </div>

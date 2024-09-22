@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
 using OnlineStore.Entities.Models.Auction;
 using OnlineStore.Entities.Models.Authentication;
@@ -13,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace OnlineStore.Infrastructure
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

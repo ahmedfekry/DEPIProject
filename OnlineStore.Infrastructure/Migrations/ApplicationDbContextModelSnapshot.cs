@@ -48,7 +48,7 @@ namespace OnlineStore.Infrastructure.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Bids");
+                    b.ToTable("Bids", (string)null);
                 });
 
             modelBuilder.Entity("OnlineStore.Entities.Models.Auction.Item", b =>
@@ -103,7 +103,7 @@ namespace OnlineStore.Infrastructure.Migrations
 
                     b.HasIndex("SellerID");
 
-                    b.ToTable("Items");
+                    b.ToTable("Items", (string)null);
                 });
 
             modelBuilder.Entity("OnlineStore.Entities.Models.Auction.Order", b =>
@@ -133,7 +133,7 @@ namespace OnlineStore.Infrastructure.Migrations
                     b.HasIndex("ItemID")
                         .IsUnique();
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("OnlineStore.Entities.Models.Authentication.User", b =>
@@ -192,7 +192,7 @@ namespace OnlineStore.Infrastructure.Migrations
 
                     b.HasIndex("CountryID");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("OnlineStore.Entities.Models.Authentication.UserProfile", b =>
@@ -226,7 +226,7 @@ namespace OnlineStore.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserProfile");
+                    b.ToTable("UserProfile", (string)null);
                 });
 
             modelBuilder.Entity("OnlineStore.Entities.Models.GeneralLookups.Category", b =>
@@ -250,7 +250,7 @@ namespace OnlineStore.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
 
                     b.HasData(
                         new
@@ -283,7 +283,7 @@ namespace OnlineStore.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Countries");
+                    b.ToTable("Countries", (string)null);
 
                     b.HasData(
                         new
@@ -323,7 +323,7 @@ namespace OnlineStore.Infrastructure.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Notifications");
+                    b.ToTable("Notifications", (string)null);
                 });
 
             modelBuilder.Entity("OnlineStore.Entities.Models.Auction.Bid", b =>

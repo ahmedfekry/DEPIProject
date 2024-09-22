@@ -9,8 +9,9 @@ namespace OnlineStore.Entities.Interfaces.IRepositries
 {
     public interface IItemRepository
     {
-        Task<IEnumerable<Item>> GetAllItems();
-        Task<IEnumerable<Item>> GetFeaturedItems();
-        Task<IEnumerable<Item>> GetItemsByCategory(int categoryId);
+        Task<IEnumerable<Item>> GetAllItemsAsync();
+        Task<IEnumerable<Item>> GetFeaturedItemsAsync();
+        Task<IEnumerable<Item>> GetItemsByCategoryAsync(int categoryId);
+        Task<Item> GetItemDetailsAsync(int itemId);
     }
 }

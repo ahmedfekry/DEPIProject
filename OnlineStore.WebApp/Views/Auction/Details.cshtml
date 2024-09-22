@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Item;
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Product Image -->
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Product Image">
+            </div>
+            <!-- Product Details -->
+            <div class="col-md-6">
+                <h2>@Model.Title</h2>
+                <p class="text-muted">Auction ends in: <span class="text-danger">3 days 2 hours</span></p>
+                <p><strong>Starting Price:</strong> $@Model.StartingPrice.ToString("##.##")</p>
+                <p><strong>Current Price:</strong> $@Model.CurrentPrice.ToString("##.##")</p>
+                <p><strong>Description:</strong> @Model.Description</p>
+
+                <!-- Seller Info Section -->
+                <div class="border p-3 mb-4">
+                    <h5>Seller Information</h5>
+                    <p><strong>Seller:</strong> @Model.Seller.UserName</p>
+                    <p><strong>Email:</strong> @Model.Seller.Email</p>
+                    <p><strong>Country:</strong> @Model.Seller.Country.CountryName</p>
+                </div>
+
+                <!-- Place a Bid -->
+                <div class="my-4">
+                    <h4>Place Your Bid</h4>
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="number" class="form-control" placeholder="Enter bid amount" min="81" required>
+                            <button class="btn btn-success" type="submit">Place Bid</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bids List Section -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h4>Bid History</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Bidder</th>
+                            <th>Bid Amount</th>
+                            <th>Bid Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example Bid Rows -->
+                        @foreach(var bid in Model.Bids)
+                        {
+                            <tr>
+                                <td>@bid.User.UserName</td>
+                                <td>$@bid.BidAmount.ToString("##.##")</td>
+                                <td>@bid.BidTime</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

@@ -13,6 +13,8 @@ namespace OnlineStore.Entities.Interfaces.IServices
 
         Task<IEnumerable<Item>> GetItemsByCategoryAysnc(int categoryid);
 
-        Task<IEnumerable<Item>> GetFeaturedItemsAysnc(); 
+        Task<IEnumerable<Item>> GetFeaturedItemsAysnc();
+
+        Task<Item> GetItemDetails(int itemId);
     }
 }
