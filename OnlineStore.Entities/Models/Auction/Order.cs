@@ -16,8 +16,8 @@ namespace OnlineStore.Entities.Models.Auction
         public decimal TotalAmount { get; set; }
 
         // Navigation properties
-        public User Buyer { get; set; }
-        public Item Item { get; set; }
+        public virtual User Buyer { get; set; }
+        public virtual Item Item { get; set; }
     }
 
 }

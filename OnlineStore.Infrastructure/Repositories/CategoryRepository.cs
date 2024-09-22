@@ -44,13 +44,24 @@ namespace OnlineStore.Infrastructure.Repositories
 
         public async Task<Category> GetCategoryByIdAsync(int id)
         {
-            return await _applicationDbContext.Categories.FindAsync(id);
+            return await _applicationDbContext.Categories.Include(c => c.Items)
+                                            .Where(c => c.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task UpdateCategoryAsync(Category category)
         {
             _applicationDbContext.Categories.Update(category);
             await _applicationDbContext.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Category>> GetFeaturedCategories()
+        {
+            var categories = await _applicationDbContext.Categories
+                                    .Where(c => c.IsFeatured == true)
+                                    .Take(4)
+                                    .ToListAsync();
+
+            return categories;
         }
     }
 }

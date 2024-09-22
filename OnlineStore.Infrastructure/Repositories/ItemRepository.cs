@@ -23,5 +23,20 @@ namespace OnlineStore.Infrastructure.Repositories
         {
             return await _applicationDbContext.Items.ToListAsync();
         }
+
+        public async Task<IEnumerable<Item>> GetFeaturedItems()
+        {
+            return await _applicationDbContext.Items
+                                              .Where(i => i.IsFeatured == true)
+                                              .Take(3)
+                                              .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Item>> GetItemsByCategory(int categoryId)
+        {
+            return await _applicationDbContext.Items
+                                              .Where(i => i.CategoryID == categoryId)
+                                              .ToListAsync();
+        }
     }
 }

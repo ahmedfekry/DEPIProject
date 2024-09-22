@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Courses/MyCoursesMaterials/DigitalEgypt/DotNetMaterials/My Materials/Project/OnlineStore/OnlineStore.WebApp/Views/Auction/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Courses/MyCoursesMaterials/DigitalEgypt/DotNetMaterials/My Materials/Project/OnlineStore/OnlineStore.WebApp/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Courses/MyCoursesMaterials/DigitalEgypt/DotNetMaterials/My Materials/Project/OnlineStore/OnlineStore.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,8 +38,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Courses/MyCoursesMaterials/DigitalEgypt/DotNetMaterials/My Materials/Project/OnlineStore/OnlineStore.WebApp/Views/Shared/_partials/_CategoryCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wYXJ0aWFsc1xfQ2F0ZWdvcnlDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Courses/MyCoursesMaterials/DigitalEgypt/DotNetMaterials/My Materials/Project/OnlineStore/OnlineStore.WebApp/Views/Shared/_partials/_heroComponent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wYXJ0aWFsc1xfaGVyb0NvbXBvbmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Courses/MyCoursesMaterials/DigitalEgypt/DotNetMaterials/My Materials/Project/OnlineStore/OnlineStore.WebApp/Views/Shared/_partials/_ItemCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wYXJ0aWFsc1xfSXRlbUNhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Courses/MyCoursesMaterials/DigitalEgypt/DotNetMaterials/My Materials/Project/OnlineStore/OnlineStore.WebApp/Views/Shared/_partials/_navbar.cshtml]

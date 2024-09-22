@@ -5,6 +5,9 @@
     var categories = ViewBag.categories;
 }
 
+@await Html.PartialAsync("_partials/_heroComponent")
+
+
 <!-- Featured Products Section -->
 <section class="py-5">
     <div class="container">
@@ -12,17 +15,7 @@
         <div class="row">
             @foreach (var item in products)
             {
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Product 1">
-                        <div class="card-body">
-                            <h5 class="card-title">@item.Title</h5>
-                            <p class="card-text">Starting Price: $@item.StartingPrice</p>
-                            <p class="text-danger">Ends in: 3 days 2 hours</p>
-                            <a href="Auction.html" class="btn btn-primary">View Auction</a>
-                        </div>
-                    </div>
-                </div>
+                @Html.Partial("_partials/_ItemCard",(Item)item)
             }
         </div>
     </div>
@@ -36,15 +29,7 @@
         <div class="row">
             @foreach (var category in categories)
             {
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Category 1">
-                        <div class="card-body">
-                            <h5 class="card-title">@category.CategoryName</h5>
-                            <a href="#" class="btn btn-outline-primary">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
+                @Html.Partial("_partials/_CategoryCard",(Category)category)
             }
         </div>
     </div>

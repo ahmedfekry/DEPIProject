@@ -10,5 +10,7 @@ namespace OnlineStore.Entities.Interfaces.IRepositries
     public interface IItemRepository
     {
         Task<IEnumerable<Item>> GetAllItems();
+        Task<IEnumerable<Item>> GetFeaturedItems();
+        Task<IEnumerable<Item>> GetItemsByCategory(int categoryId);
     }
 }

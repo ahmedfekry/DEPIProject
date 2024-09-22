@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<Item>;
+
+<div class="container mt-5">
+    @if (ViewBag.Category != null)
+    {
+        <h2 class="text-center">Auctions at  @ViewBag.Category.CategoryName</h2>
+    }
+    else
+    {
+        <h2 class="text-center">Auctions  </h2>
+    }
+
+    <!-- Search Input Section -->
+    <div class="search-bar mt-4">
+        <form method="GET" action="/search-products">
+            <div class="input-group">
+                <input type="text" name="query" class="form-control" placeholder="Search for products..." aria-label="Search" aria-describedby="search-button">
+                <button class="btn btn-primary" type="submit" id="search-button">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="row mt-5">
+        <!-- Loop through the products from the selected category -->
+        <!-- Placeholder for displaying each product -->
+        @* <div class="col-md-4">
+            <div class="card">
+                <img src="product-image.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Smartphone XYZ</h5>
+                    <p class="card-text">Starting Price: $300</p>
+                    <p class="card-text">Auction ends: 2024-09-30 18:00</p>
+                    <a href="/product/123/view-auction" class="btn btn-primary">View Auction</a>
+                </div>
+            </div>
+        </div>
+ *@ 
+        @foreach(var item in Model)
+        {
+            @Html.Partial("_partials/_ItemCard",(Item)item)
+        }
+
+        <!-- Repeat the above structure dynamically for each product -->
+    </div>
+</div>

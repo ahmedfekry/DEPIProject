@@ -43,5 +43,10 @@ namespace OnlineStore.Services
         {
             await _categoryRepository.UpdateCategoryAsync(category);
         }
+
+        public async Task<IEnumerable<Category>> GetFeaturedCategoriesAsync()
+        {
+            return await _categoryRepository.GetFeaturedCategories();
+        }
     }
 }

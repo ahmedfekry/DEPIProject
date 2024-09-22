@@ -18,5 +18,7 @@ namespace OnlineStore.Entities.Interfaces.IServices
         Task DeleteCategoryAsync(int id);
 
         Task UpdateCategoryAsync(Category category);
+
+        Task<IEnumerable<Category>> GetFeaturedCategoriesAsync();
     }
 }

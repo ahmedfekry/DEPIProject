@@ -15,7 +15,7 @@ namespace OnlineStore.Entities.Models.GeneralLookups
         public string CountryName { get; set; }
 
         // Navigation property
-        public ICollection<User> Users { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 
 }

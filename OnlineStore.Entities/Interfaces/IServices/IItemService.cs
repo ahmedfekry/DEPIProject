@@ -9,6 +9,10 @@ namespace OnlineStore.Entities.Interfaces.IServices
 {
     public interface IItemService
     {
-        Task<IEnumerable<Item>> GetAllItems();
+        Task<IEnumerable<Item>> GetAllItemsAysnc();
+
+        Task<IEnumerable<Item>> GetItemsByCategoryAysnc(int categoryid);
+
+        Task<IEnumerable<Item>> GetFeaturedItemsAysnc(); 
     }
 }

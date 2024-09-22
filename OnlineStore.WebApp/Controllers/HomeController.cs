@@ -23,8 +23,8 @@ namespace OnlineStore.WebApp.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var items = await itemService.GetAllItems();
-            var categories = await _categoryService.GetAllCategoriesAsync();
+            var items = await itemService.GetFeaturedItemsAysnc();
+            var categories = await _categoryService.GetFeaturedCategoriesAsync();
 
             //ViewBag => to pass the data from the controller to the view / current request
             //ViewData => to pass data from the controller to the view / current request

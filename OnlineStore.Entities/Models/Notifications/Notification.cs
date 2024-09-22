@@ -16,7 +16,7 @@ namespace OnlineStore.Entities.Models.Notifications
         public DateTime CreatedAt { get; set; }
 
         // Navigation property
-        public User User { get; set; }
+        public virtual User User { get; set; }
     }
 
 }

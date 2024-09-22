@@ -18,8 +18,8 @@ namespace OnlineStore.Entities.Models.Auction
         public DateTime BidTime { get; set; }
 
         // Navigation properties
-        public Item Item { get; set; }
-        public User User { get; set; }
+        public virtual Item Item { get; set; }
+        public virtual User User { get; set; }
     }
 
 }

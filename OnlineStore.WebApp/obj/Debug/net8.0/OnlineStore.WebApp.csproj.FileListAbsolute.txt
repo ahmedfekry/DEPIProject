@@ -142,3 +142,5 @@ E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\Castle.Core.dll
+E:\Courses\MyCoursesMaterials\DigitalEgypt\DotNetMaterials\My Materials\Project\OnlineStore\OnlineStore.WebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

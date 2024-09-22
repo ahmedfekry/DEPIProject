@@ -18,9 +18,19 @@ namespace OnlineStore.Services
             this.itemRepository = itemRepository;
         }
 
-        public async Task<IEnumerable<Item>> GetAllItems()
+        public async Task<IEnumerable<Item>> GetAllItemsAysnc()
         {
             return await itemRepository.GetAllItems();
+        }
+
+        public async Task<IEnumerable<Item>> GetFeaturedItemsAysnc()
+        {
+            return await itemRepository.GetFeaturedItems();
+        }
+
+        public async Task<IEnumerable<Item>> GetItemsByCategoryAysnc(int categoryid)
+        {
+            return await itemRepository.GetItemsByCategory(categoryid);
         }
     }
 }

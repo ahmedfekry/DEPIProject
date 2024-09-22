@@ -15,8 +15,10 @@ namespace OnlineStore.Entities.Models.GeneralLookups
         public string CategoryName { get; set; }
         public string Description { get; set; }
 
+        public bool IsFeatured { get; set; }
+
         // Navigation property
-        public ICollection<Item>? Items { get; set; }
+        public virtual ICollection<Item>? Items { get; set; }
     }
 
 }

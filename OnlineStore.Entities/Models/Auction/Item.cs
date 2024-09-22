@@ -21,13 +21,14 @@ namespace OnlineStore.Entities.Models.Auction
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string ImageURL { get; set; }
+        public bool IsFeatured { get; set; }
         public DateTime CreatedAt { get; set; }
 
         // Navigation properties
-        public User Seller { get; set; }
-        public Category Category { get; set; }
-        public ICollection<Bid> Bids { get; set; }
-        public Order Order { get; set; }
+        public virtual User Seller { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual ICollection<Bid> Bids { get; set; }
+        public virtual Order Order { get; set; }
     }
 
 }

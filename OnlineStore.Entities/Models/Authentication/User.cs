@@ -23,11 +23,11 @@ namespace OnlineStore.Entities.Models.Authentication
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         // Navigation properties
-        public Country Country { get; set; }
-        public ICollection<Item> Items { get; set; }
-        public ICollection<Bid> Bids { get; set; }
-        public ICollection<Order> Orders { get; set; }
-        public ICollection<Notification> Notifications { get; set; }
+        public virtual Country Country { get; set; }
+        public virtual ICollection<Item> Items { get; set; }
+        public virtual ICollection<Bid> Bids { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Notification> Notifications { get; set; }
     }
 
 }

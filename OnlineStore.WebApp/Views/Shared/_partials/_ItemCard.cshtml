@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Item;
+
+<div class="col-md-4 mb-2">
+    <div class="card">
+        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Title</h5>
+            <p class="card-text">Starting Price: $@Model.StartingPrice</p>
+            <p class="text-danger">Ends in: 3 days 2 hours</p>
+            <a href="#" class="btn btn-primary">View Auction</a>
+        </div>
+    </div>
+</div>
