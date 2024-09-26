@@ -9,18 +9,14 @@ using Microsoft.AspNetCore.Identity;
 
 namespace OnlineStore.Entities.Models.Authentication
 {
-    public class User : IdentityUser
+    public class User : IdentityUser<int>
     {
-        //public int ID { get; set; }
-        //public string Username { get; set; }
-        //public string Email { get; set; }
-        //public string PasswordHash { get; set; }
         public string Status { get; set; }
         public string AddressLine1 { get; set; }
         public string AddressLine2 { get; set; }
         public string City { get; set; }
         public string State { get; set; }
-        public string PostalCode { get; set; }
+        public string? PostalCode { get; set; }
         public int CountryID { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 

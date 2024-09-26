@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
 using OnlineStore.Entities.Models.Auction;
@@ -14,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace OnlineStore.Infrastructure
 {
-    public class ApplicationDbContext : IdentityDbContext<User>
+    public class ApplicationDbContext : IdentityDbContext<User,IdentityRole<int>,int>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -38,6 +39,7 @@ namespace OnlineStore.Infrastructure
 
             modelBuilder.ConfigureRelationships();
             base.OnModelCreating(modelBuilder);
+
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Item> Items { get; set; }

@@ -31,13 +31,19 @@
                 <!-- Place a Bid -->
                 <div class="my-4">
                     <h4>Place Your Bid</h4>
-                    <form>
+                    <form method="post" asp-action="SubmitBid">
                         <div class="input-group mb-3">
+                            <input type="hidden" value="@Model.ID" name="ItemId" />
                             <span class="input-group-text">$</span>
-                            <input type="number" class="form-control" placeholder="Enter bid amount" min="81" required>
+                            <input type="number" name="Amount" class="form-control" placeholder="Enter bid amount" min="81" required>
                             <button class="btn btn-success" type="submit">Place Bid</button>
+                            @* <input type="submit" class="f" />  *@
                         </div>
                     </form>
+                    @if(ViewBag.Message != null)
+                    {
+                        <div class="alert alert-success" > @ViewBag.Message </div>
+                    }
                 </div>
             </div>
         </div>

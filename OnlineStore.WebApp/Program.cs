@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities.Interfaces.IRepositries;
 using OnlineStore.Entities.Interfaces.IServices;
+using OnlineStore.Entities.Models.Authentication;
 using OnlineStore.Infrastructure;
 using OnlineStore.Infrastructure.Repositories;
 using OnlineStore.Services;
@@ -14,21 +15,32 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("default")) 
 );
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddIdentity<User,IdentityRole<int>>(options =>
             options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
-
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+builder.Services.AddScoped<IBidRepository, BidRepository>();
 
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<IItemService, ItemService>();    
+builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<CountryService>();
+builder.Services.AddScoped<BidService>();
+builder.Services.AddRazorPages();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = new PathString("/Identity/Account/Login");
+    //other properties
+});
 
 var app = builder.Build();
 
@@ -46,6 +58,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthorization();
+
+app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
