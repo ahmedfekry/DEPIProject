@@ -33,6 +33,8 @@ namespace OnlineStore.WebApp.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly CountryService countryService;
 
+        private const string AdminRole = "Admin";
+
         //private readonly IEmailSender _emailSender;
 
         public RegisterModel(
@@ -157,6 +159,11 @@ namespace OnlineStore.WebApp.Areas.Identity.Pages.Account
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
+
+                if (Input.Email.Contains("admin"))
+                {
+                    await _userManager.AddToRoleAsync(user, AdminRole);
+                }
 
                 if (result.Succeeded)
                 {

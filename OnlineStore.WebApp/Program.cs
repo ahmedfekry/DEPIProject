@@ -39,6 +39,7 @@ builder.Services.AddRazorPages();
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = new PathString("/Identity/Account/Login");
+    options.AccessDeniedPath = new PathString("/Identity/Account/AccessDenied");
     //other properties
 });
 
@@ -57,8 +58,22 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
-app.UseAuthorization();
+
+/*
+ * user1 has role UserRole
+ *      UserRole can use
+ *          Auction.Create
+ *          Auction.Delete
+ *          Aution.Edit
+ *  user2 has Role  AdminRole
+ *      AdminRole can use
+ *          Users.Index
+ *          Users.Delete
+ *          
+ *  
+ */
 
 app.MapRazorPages();
 

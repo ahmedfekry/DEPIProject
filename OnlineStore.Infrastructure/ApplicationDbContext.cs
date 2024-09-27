@@ -37,6 +37,11 @@ namespace OnlineStore.Infrastructure
                     new Country() { Id = 2, CountryName = "United Arab Emirates" }
                 );
 
+            modelBuilder.Entity<IdentityRole<int>>().HasData(
+                   new IdentityRole<int>() { Id = 1,Name = "User",NormalizedName = "USER"},
+                   new IdentityRole<int>() { Id = 2, Name = "Admin",NormalizedName = "Admin"}
+                );
+
             modelBuilder.ConfigureRelationships();
             base.OnModelCreating(modelBuilder);
 

@@ -47,5 +47,11 @@ namespace OnlineStore.Infrastructure.Repositories
                                               .Include(i => i.Bids)
                                               .Where(i => i.ID == itemId).FirstOrDefaultAsync();
         }
+
+        public async Task Add(Item item)
+        {
+            await _applicationDbContext.Items.AddAsync(item);
+            _applicationDbContext.SaveChangesAsync();
+        }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.WebApp\\OnlineStore.WebApp.csproj": {}
+    "H:\\.NETTrack\\DEPIProject\\OnlineStore.WebApp\\OnlineStore.WebApp.csproj": {}
   },
   "projects": {
-    "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Entities\\OnlineStore.Entities.csproj": {
+    "H:\\.NETTrack\\DEPIProject\\OnlineStore.Entities\\OnlineStore.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Entities\\OnlineStore.Entities.csproj",
+        "projectUniqueName": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Entities\\OnlineStore.Entities.csproj",
         "projectName": "OnlineStore.Entities",
-        "projectPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Entities\\OnlineStore.Entities.csproj",
-        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-        "outputPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Entities\\obj\\",
+        "projectPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Entities\\OnlineStore.Entities.csproj",
+        "packagesPath": "C:\\Users\\Mostafa Saad\\.nuget\\packages\\",
+        "outputPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mostafa Saad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,21 +66,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj": {
+    "H:\\.NETTrack\\DEPIProject\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj",
+        "projectUniqueName": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj",
         "projectName": "OnlineStore.Infrastructure",
-        "projectPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-        "outputPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Infrastructure\\obj\\",
+        "projectPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Mostafa Saad\\.nuget\\packages\\",
+        "outputPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mostafa Saad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Entities\\OnlineStore.Entities.csproj": {
-                "projectPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Entities\\OnlineStore.Entities.csproj"
+              "H:\\.NETTrack\\DEPIProject\\OnlineStore.Entities\\OnlineStore.Entities.csproj": {
+                "projectPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Entities\\OnlineStore.Entities.csproj"
               }
             }
           }
@@ -156,21 +156,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Services\\OnlineStore.Services.csproj": {
+    "H:\\.NETTrack\\DEPIProject\\OnlineStore.Services\\OnlineStore.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Services\\OnlineStore.Services.csproj",
+        "projectUniqueName": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Services\\OnlineStore.Services.csproj",
         "projectName": "OnlineStore.Services",
-        "projectPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Services\\OnlineStore.Services.csproj",
-        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-        "outputPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Services\\obj\\",
+        "projectPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Services\\OnlineStore.Services.csproj",
+        "packagesPath": "C:\\Users\\Mostafa Saad\\.nuget\\packages\\",
+        "outputPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mostafa Saad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,11 +184,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Entities\\OnlineStore.Entities.csproj": {
-                "projectPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Entities\\OnlineStore.Entities.csproj"
+              "H:\\.NETTrack\\DEPIProject\\OnlineStore.Entities\\OnlineStore.Entities.csproj": {
+                "projectPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Entities\\OnlineStore.Entities.csproj"
               },
-              "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj": {
-                "projectPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj"
+              "H:\\.NETTrack\\DEPIProject\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj": {
+                "projectPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj"
               }
             }
           }
@@ -223,21 +223,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.WebApp\\OnlineStore.WebApp.csproj": {
+    "H:\\.NETTrack\\DEPIProject\\OnlineStore.WebApp\\OnlineStore.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.WebApp\\OnlineStore.WebApp.csproj",
+        "projectUniqueName": "H:\\.NETTrack\\DEPIProject\\OnlineStore.WebApp\\OnlineStore.WebApp.csproj",
         "projectName": "OnlineStore.WebApp",
-        "projectPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.WebApp\\OnlineStore.WebApp.csproj",
-        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-        "outputPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.WebApp\\obj\\",
+        "projectPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.WebApp\\OnlineStore.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Mostafa Saad\\.nuget\\packages\\",
+        "outputPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mostafa Saad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -251,8 +251,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Services\\OnlineStore.Services.csproj": {
-                "projectPath": "E:\\Courses\\MyCoursesMaterials\\DigitalEgypt\\DotNetMaterials\\My Materials\\Project\\OnlineStore\\OnlineStore.Services\\OnlineStore.Services.csproj"
+              "H:\\.NETTrack\\DEPIProject\\OnlineStore.Services\\OnlineStore.Services.csproj": {
+                "projectPath": "H:\\.NETTrack\\DEPIProject\\OnlineStore.Services\\OnlineStore.Services.csproj"
               }
             }
           }
@@ -332,7 +332,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

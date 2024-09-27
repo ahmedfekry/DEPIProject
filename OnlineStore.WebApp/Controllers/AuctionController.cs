@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using OnlineStore.Entities.DTOs;
 using OnlineStore.Entities.Interfaces.IRepositries;
 using OnlineStore.Entities.Interfaces.IServices;
 using OnlineStore.Entities.Models.Auction;
@@ -79,5 +80,30 @@ namespace OnlineStore.WebApp.Controllers
 
             return RedirectToAction("Details", new { id = ItemId });
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Submit(ItemDto itemDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("Create",itemDto);
+            }
+
+            var user = await UserManager.GetUserAsync(User);
+
+            itemDto.SellerID = user.Id;
+
+            await ItemService.AddItem(itemDto);
+
+            return RedirectToAction("Index") ;
+        }
+
     }
 }

@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model OnlineStore.Entities.DTOs.ItemDto
+
+<div class="container mt-5">
+    <h1 class="mb-4">Create New Item</h1>
+    <form asp-action="Submit" method="POST">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" class="form-control" id="title" asp-for="Title" >
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" asp-for="Description" rows="4" ></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select class="form-control" id="category" asp-for="CategoryId" >
+                <option value="" disabled selected>Select a category</option>
+                <option value="1">Electronics</option>
+                <option value="2">Books</option>
+                <option value="3">Clothing</option>
+                <option value="4">Home & Garden</option>
+                <option value="5">Sports</option>
+                <option value="6">Toys</option>
+                <option value="7">Health & Beauty</option>
+                <option value="8">Automotive</option>
+                <option value="9">Music</option>
+                <option value="10">Jewelry</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="startingPrice">Starting Price ($):</label>
+            <input type="number" class="form-control" id="startingPrice" asp-for="StartingPrice" step="0.01" >
+        </div>
+
+        <div class="form-group">
+            <label for="startDate">Start Date:</label>
+            <input type="date" class="form-control" id="startDate" asp-for="StartDate" >
+        </div>
+
+        <div class="form-group">
+            <label for="endDate">End Date:</label>
+            <input type="date" class="form-control" id="endDate" asp-for="EndDateDate" >
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Create Item</button>
+    </form>
+</div>

@@ -13,5 +13,7 @@ namespace OnlineStore.Entities.Interfaces.IRepositries
         Task<IEnumerable<Item>> GetFeaturedItemsAsync();
         Task<IEnumerable<Item>> GetItemsByCategoryAsync(int categoryId);
         Task<Item> GetItemDetailsAsync(int itemId);
+
+        Task Add(Item item);
     }
 }

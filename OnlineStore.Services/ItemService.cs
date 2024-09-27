@@ -1,4 +1,5 @@
-﻿using OnlineStore.Entities.Interfaces.IRepositries;
+﻿using OnlineStore.Entities.DTOs;
+using OnlineStore.Entities.Interfaces.IRepositries;
 using OnlineStore.Entities.Interfaces.IServices;
 using OnlineStore.Entities.Models.Auction;
 using System;
@@ -36,6 +37,25 @@ namespace OnlineStore.Services
         public async Task<IEnumerable<Item>> GetItemsByCategoryAysnc(int categoryid)
         {
             return await itemRepository.GetItemsByCategoryAsync(categoryid);
+        }
+
+
+        public async Task AddItem(ItemDto itemDto)
+        {
+            Item item = new Item()
+            {
+                CategoryID = itemDto.CategoryId,
+                Title = itemDto.Title,
+                Description = itemDto.Description,
+                StartDate = itemDto.StartDate,
+                EndDate = itemDto.EndDateDate,
+                StartingPrice = itemDto.StartingPrice,
+                SellerID = itemDto.SellerID,
+                CurrentPrice = itemDto.StartingPrice,
+                CreatedAt = DateTime.Now,
+            };
+
+            await itemRepository.Add(item); 
         }
     }
 }

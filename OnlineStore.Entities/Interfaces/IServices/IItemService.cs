@@ -1,4 +1,5 @@
-﻿using OnlineStore.Entities.Models.Auction;
+﻿using OnlineStore.Entities.DTOs;
+using OnlineStore.Entities.Models.Auction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,7 @@ namespace OnlineStore.Entities.Interfaces.IServices
         Task<IEnumerable<Item>> GetFeaturedItemsAysnc();
 
         Task<Item> GetItemDetails(int itemId);
+
+        Task AddItem(ItemDto item);
     }
 }
